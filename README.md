@@ -1,1 +1,1 @@
-# losn-neuron
+# LOSN
