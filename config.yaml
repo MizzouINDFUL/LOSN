@@ -1,0 +1,30 @@
+
+#---------------------------------------
+# Initialize: Experiment Parameter(s)
+#---------------------------------------
+
+experiment: xor                                                                           # Initialize: Experiment (XOR, Synth)
+xor_features: 2                                                                             # Initialize: XOR Features
+
+#---------------------------------------
+# Initialize: Synthetic Parameter(s)
+#---------------------------------------
+
+aggregation: mean                                                                           # Initialize: LOSN Aggregation (To Learn)
+train_samples: 500                                                                          # Initialize: Number Samples (Train)
+valid_samples: 500                                                                          # Initialize: Number Samples (Valid)
+train_features: 1000                                                                        # Initialize: Number Features (Train)
+valid_features: 1000                                                                        # Initialize: Number Features (Valid)
+
+#---------------------------------------
+# Initialize: Train Model Parameter(s)
+#---------------------------------------
+
+bias: True                                                                                  # Initialize: Flag, LOSN Bias
+batch_size: 1                                                                               # Initialize: Batch, Size
+num_epochs: 1000                                                                            # Initialize: Number Epochs
+momentum_rate: 0.9                                                                          # Initialize: Momentum Rate
+learning_rate: .001                                                                         # Initialize: Learning Rate
+
+visualize_loss: True                                                                        # Initialize: Plot(s) Loss
+
