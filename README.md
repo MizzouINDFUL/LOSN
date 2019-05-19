@@ -1,14 +1,17 @@
 # Linear Order Statistic Neuron (LOSN)<br>
 
-## Overview
+## Code Overview
 
-<p> This code is broken down into the following files: </p>
+This code is broken down into the following files:
 
-<ol>
-<li>__config.py__ - Configuration File
-<li>experiment.py - Main File. Includes Training
-<li>datasets.py - Loads Dataset: XOR || Synthethic 
-<li>plots.py - Displays Training Loss, Results
-<ol>
+1. **config.py** - Configuration File
+2. **experiment.py** - Main File. Includes Training
+3. **datasets.py** - Loads Dataset: XOR || Synthethic 
+4. **plots.py** - Displays Training Loss, Results
 
+This code supports the following functionality:
 
+1. Train LOSN to learn aggregation
+2.  Train LOSN to solve XOR problem
+
+ 
