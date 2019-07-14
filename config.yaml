@@ -1,30 +1,63 @@
 
-#---------------------------------------
-# Initialize: Experiment Parameter(s)
-#---------------------------------------
+#-----------------------------------------------------------------
+# University of Missouri-Columbia
+#
+# Date: 7/5/2019
+# Author: Charlie Veal
+# Description: Configuration File, See Repo For Details 
+#-----------------------------------------------------------------
+#
+# This program is free software: 
+# you can redistribute it and / or modify it under the  
+# terms of the GNU General Public License as published by the 
+# Free Software Foundation, either version 3 of the License, 
+# or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be 
+# useful, but WITHOUT ANY WARRANTY; without even the implied i
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the 
+# GNU General Public License along with this program.  
+# If not, see <https://www.gnu.org/licenses/>.
+#-----------------------------------------------------------------
 
-experiment: xor                                                                           # Initialize: Experiment (XOR, Synth)
-xor_features: 2                                                                             # Initialize: XOR Features
+#------------------------------------
+# Initialize: LOSN Experiment
+# Choice: XOR Dataset (XOR)
+# Choice: Synthetic Discrete (Dis)
+# Choice: Synthetic Aggregation (Agg)
+# - Discrete Value: # Classes
+# - Agg Value: Mean, Hardmax, Hardmin  
+#------------------------------------
 
-#---------------------------------------
-# Initialize: Synthetic Parameter(s)
-#---------------------------------------
+gen_data: True
+use_valid: True
 
-aggregation: mean                                                                           # Initialize: LOSN Aggregation (To Learn)
-train_samples: 500                                                                          # Initialize: Number Samples (Train)
-valid_samples: 500                                                                          # Initialize: Number Samples (Valid)
-train_features: 1000                                                                        # Initialize: Number Features (Train)
-valid_features: 1000                                                                        # Initialize: Number Features (Valid)
+train_samples: 100
+train_features: 100
+valid_samples: 100
+valid_features: 100
 
-#---------------------------------------
-# Initialize: Train Model Parameter(s)
-#---------------------------------------
+experiment: 
+    type: xor 
+    dis_value: 5
+    agg_value: mean
+
+path_root: Data
+train_filename: train_model_data.csv 
+valid_filename: valid_model_data.csv
+
+#------------------------------------
+# Initialize: Train Parameter(s)
+#------------------------------------
 
 bias: True                                                                                  # Initialize: Flag, LOSN Bias
-batch_size: 1                                                                               # Initialize: Batch, Size
-num_epochs: 1000                                                                            # Initialize: Number Epochs
+verbose: False                                                                              # Initialize: Flag, Details
+batch_size: 32                                                                              # Initialize: Batch, Size
+num_epochs: 100                                                                             # Initialize: Number Epochs
 momentum_rate: 0.9                                                                          # Initialize: Momentum Rate
 learning_rate: .001                                                                         # Initialize: Learning Rate
-
 visualize_loss: True                                                                        # Initialize: Plot(s) Loss
 
