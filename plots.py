@@ -77,11 +77,10 @@ def display_loss(params):
                 plt.plot( np.arange(num_epochs), train, 
                           linewidth=3.0, label=str('Class: '+str(count)) )                  # Plot: Train Loss
             plt.legend()
-
-        plt.title('Train Loss: 1 vs All')
-        plt.xlabel('Epochs')
-        plt.ylabel('Error')         
-        plt.ylim(0, 1)
+            plt.title('Train Loss: 1 vs All')
+            plt.xlabel('Epochs')
+            plt.ylabel('Error')         
+            plt.ylim(0, 1)
 
         plt.tight_layout()
         plt.show()

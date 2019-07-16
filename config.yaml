@@ -35,13 +35,13 @@
 gen_data: True
 use_valid: True
 
-train_samples: 100
-train_features: 100
-valid_samples: 100
-valid_features: 100
+train_samples: 1000
+train_features: 1000
+valid_samples: 1000
+valid_features: 1000
 
 experiment: 
-    type: xor 
+    type: dis 
     dis_value: 5
     agg_value: mean
 
