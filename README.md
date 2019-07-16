@@ -102,7 +102,7 @@ python experiment.py -config config.yaml
 Results should look something like the following:
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/46911156/61257460-afbd4480-a736-11e9-82b2-220bd66f109f.png" width="512"> </p>
+  <img src="https://user-images.githubusercontent.com/46911156/61257460-afbd4480-a736-11e9-82b2-220bd66f109f.png" width="600"> </p>
   
 **Example: LOSN Synthethic Aggregation**
 
@@ -116,7 +116,7 @@ python experiment.py -config config.yaml
 Results should look something like the following:
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/46911156/61257330-39204700-a736-11e9-9d65-e42f8f2594c7.png" width="512"> </p>
+  <img src="https://user-images.githubusercontent.com/46911156/61257330-39204700-a736-11e9-9d65-e42f8f2594c7.png" width="600"> </p>
 
 **Example: LOSN XOR Problem**
 
@@ -128,6 +128,6 @@ python experiment.py -config config.yaml
 
 Results should look something like the following:
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/46911156/61257325-34f42980-a736-11e9-9ff7-b4e1be169cff.png" width="350">
-  <img src="https://user-images.githubusercontent.com/46911156/61257331-39204700-a736-11e9-9ff5-7e70923db4ff.png" width="350">
+  <img src="https://user-images.githubusercontent.com/46911156/61257325-34f42980-a736-11e9-9ff7-b4e1be169cff.png" width="400">
+  <img src="https://user-images.githubusercontent.com/46911156/61257331-39204700-a736-11e9-9ff5-7e70923db4ff.png" width="400">
 </p>
