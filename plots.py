@@ -121,7 +121,7 @@ def evaluate_model(params, res = 0.03, cm = plt.cm.RdBu):
         sample = sample.type('torch.FloatTensor')
 
         samples.append(sample.numpy())                                                      # Gather: Test Samples
-        labels.append(label.numpy())                                                       # Gather: Test Labels
+        labels.append(label.numpy())                                                        # Gather: Test Labels
     
     labels = np.asarray(labels).reshape(4, 1)
     samples = np.asarray(samples).reshape(4, 2)
