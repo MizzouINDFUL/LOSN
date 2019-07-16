@@ -55,9 +55,14 @@ The recommendation for installtion is anaconda/miniconda: <p><a href="https://ww
 
 Always recommended to create isolated conda environment.
 
+If you're using MacOS, grab pyqt as shown below.
+
 Pick Pytorch GPU or Pytorch CPU (not both!)
 
+
 **General Packages**: conda install -c conda-forge tqdm pyyaml matplotlib
+
+**MacOS Only**: conda install pyqt
 
 **Pytorch GPU**: conda install -c pytorch pytorch torchvision
 
@@ -79,7 +84,50 @@ This code supports the following functionality:
 
 1. Train LOSN to solve synthetic classification.
 2. Train LOSN to learn synthetic aggregation
-2. Train LOSN to solve XOR problem
+3. Train LOSN to solve XOR problem
 
+All parameters of interest will be inside **config.py**. Therefore, most experiments can be run by just modifying that file.
 
+For the examples below, the synthetic experiments were run with parameters **train_samples**, **train_features**, **valid_samples**, **valid_features** all set to 1000.
 
+**Example: LOSN Synthethic Classification** 
+
+Inside configuration file: 
+**change experiment type to dis**,
+**change dis_value to 5**,
+**change batch_size to 32**
+
+python experiment.py -config config.yaml
+
+Results should look something like the following:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46911156/61257460-afbd4480-a736-11e9-82b2-220bd66f109f.png" width="512"> </p>
+  
+**Example: LOSN Synthethic Aggregation**
+
+Inside configuration file:
+**change experiment type to agg**,
+**change agg_value to mean**,
+**change batch_size to 32**
+
+python experiment.py -config config.yaml
+
+Results should look something like the following:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46911156/61257330-39204700-a736-11e9-9d65-e42f8f2594c7.png" width="512"> </p>
+
+**Example: LOSN XOR Problem**
+
+Inside configuration file: 
+**change experiment type to xor**,
+**change batch_size to 1**
+
+python experiment.py -config config.yaml
+
+Results should look something like the following:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46911156/61257325-34f42980-a736-11e9-9ff7-b4e1be169cff.png" width="350">
+  <img src="https://user-images.githubusercontent.com/46911156/61257331-39204700-a736-11e9-9ff5-7e70923db4ff.png" width="350">
+</p>
